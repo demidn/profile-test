@@ -24,7 +24,7 @@ function formatError(error: GraphQLFormattedError, originalError: unknown): Grap
   imports: [
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
-      autoSchemaFile: 'schema.gql',
+      autoSchemaFile: true,
       sortSchema: true,
       formatError,
     }),
