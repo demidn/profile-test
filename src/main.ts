@@ -1,10 +1,10 @@
 import 'dotenv/config';
-import { mkdirSync } from 'node:fs';
-import { resolve } from 'node:path';
+// import { mkdirSync } from 'node:fs';
+// import { resolve } from 'node:path';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module.js';
 
-mkdirSync(resolve('prisma/data'), { recursive: true });
+// mkdirSync(resolve('prisma/data'), { recursive: true });
 
 const app = await NestFactory.create(AppModule);
 const corsOrigins = (process.env.CORS_ORIGINS ?? '')
