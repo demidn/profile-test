@@ -15,7 +15,7 @@ export class ProfileResolver {
   ) {}
 
   @Query(() => ProfileModel)
-  async profile(@Args('slug', { defaultValue: 'demid-nikitin' }) slug: string): Promise<ProfileModel> {
+  async profile(@Args('slug') slug: string): Promise<ProfileModel> {
     try {
       return mapProfileToModel(await this.getProfile.execute(slug));
     } catch (error) {
