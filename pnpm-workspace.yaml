@@ -1,0 +1,10 @@
+allowBuilds:
+  '@apollo/protobufjs': true
+  '@prisma/client': true
+  '@prisma/engines': true
+  esbuild: true
+  prisma: true
+
+overrides:
+  magic-string: 0.30.21
+  ora: 5.4.1
