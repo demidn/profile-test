@@ -9,6 +9,7 @@
   "packageManager": "pnpm@12.9.1",
   "scripts": {
     "build": "nest build",
+    "build:vercel": "pnpm db:init && pnpm build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"prisma/**/*.ts\" \"*.{json,yml,yaml}\"",
     "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\" \"prisma/**/*.ts\" \"*.{json,yml,yaml}\"",
     "start": "pnpm db:init && nest start",
